@@ -11,4 +11,10 @@ export default defineConfig({
     tailwindcss()
   
   ],
+  server: {
+    proxy: {
+      "/images": "http://localhost:1000",
+      "/uploads": "http://localhost:1000"
+    }
+  }
 })
